@@ -7,25 +7,25 @@ Find and replace all on all files (CMD+SHIFT+F):
 - Description: My new Nuxt module
 -->
 
-# Snow Effect Nuxt module
+# Nuxt Snow Effect
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+A simple Nuxt module to add snow effect to your Nuxt application using [snow-effect](https://github.com/le-pepe/snow-effect) custom element.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-snow-effect?file=playground%2Fapp.vue) -->
+<!-- - [🏀 Online playground](https://stackblitz.com/github/le-pepe/nuxt-snow-effect?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- Add snow effect to your Nuxt application
+- Customize the snow effect with various options
+- Easy to use and setup
 
 ## Quick Setup
 
@@ -35,7 +35,31 @@ Install the module to your Nuxt application with one command:
 npx nuxi module add nuxt-snow-effect
 ```
 
-That's it! You can now use Snow Effect Nuxt module in your Nuxt app ✨
+Add the module to your `nuxt.config.ts`:
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-snow-effect',
+  ],
+})
+```
+
+Then in your `app.vue` file, add `<SnowEffectComponent>`:
+
+```vue
+<SnowEffectComponent />
+```
+
+### Options
+
+| Option | Type   | Default         | Example                              | Description                                |
+|--------|--------|-----------------|--------------------------------------|--------------------------------------------|
+| color  | string | white / #ffffff | `<SnowEffectComponent color="red" />` | Change the color of the flakes             |
+| flakes | number | 100             | `<SnowEffectComponent flakes="150" />`| Change the number of flakes                |
+| speed  | number | 1               | `<SnowEffectComponent speed="1.5" />` | Change the speed of the falling flakes     |
+
+
 
 
 ## Contribution
