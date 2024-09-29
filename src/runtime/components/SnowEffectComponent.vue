@@ -24,6 +24,4 @@ defineProps({
 </template>
 
 <style scoped>
-snow-effect {
- --zindex: -1}
 </style>
