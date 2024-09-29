@@ -27,7 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
     addPlugin(resolver.resolve('./runtime/plugin.client'))
     addComponent({
       name: 'SnowEffectComponent',
-      filePath: resolver.resolve('./components/SnowEffectComponent.vue'),
+      filePath: resolver.resolve('./runtime/components/SnowEffectComponent.vue'),
     })
   },
 })
