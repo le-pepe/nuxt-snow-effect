@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.0.3...v1.1.0)
+
+### 🚀 Enhancements
+
+- **module.ts): update file path for SnowEffectComponent to runtime directory for better organization feat(SnowEffectComponent.vue:** Add new component for snow effect with customizable properties like color, flakes, and speed ([42efaff](https://github.com/le-pepe/nuxt-snow-effect/commit/42efaff))
+
+### ❤️ Contributors
+
+- LePepe ([@le-pepe](http://github.com/le-pepe))
+
 ## v1.0.3
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.0.2...v1.0.3)
