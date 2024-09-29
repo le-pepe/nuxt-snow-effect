@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.2
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.1.1...v1.1.2)
+
+### 🏡 Chore
+
+- **SnowEffectComponent.vue:** Remove unused CSS for snow-effect to clean up the codebase ([9cab6cc](https://github.com/le-pepe/nuxt-snow-effect/commit/9cab6cc))
+
+### ❤️ Contributors
+
+- LePepe ([@le-pepe](http://github.com/le-pepe))
+
 ## v1.1.1
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.1.0...v1.1.1)
