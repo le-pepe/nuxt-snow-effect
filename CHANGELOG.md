@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.3
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.1.2...v1.1.3)
+
+### 🩹 Fixes
+
+- **SnowEffectComponent.vue:** Wrap snow-effect component in ClientOnly to prevent hydration issues in SSR environments ([8e29081](https://github.com/le-pepe/nuxt-snow-effect/commit/8e29081))
+
+### ❤️ Contributors
+
+- LePepe ([@le-pepe](http://github.com/le-pepe))
+
 ## v1.1.2
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.1.1...v1.1.2)
