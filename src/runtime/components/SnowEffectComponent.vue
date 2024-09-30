@@ -16,11 +16,13 @@ defineProps({
 </script>
 
 <template>
-  <snow-effect
-    :color="color"
-    :flakes="flakes"
-    :speed="speed"
-  />
+  <ClientOnly>
+    <snow-effect
+      :color="color"
+      :flakes="flakes"
+      :speed="speed"
+    />
+  </ClientOnly>
 </template>
 
 <style scoped>
