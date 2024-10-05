@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.1.3...v1.2.0)
+
+### 🚀 Enhancements
+
+- **README.md): update module name to include scope for clarity and consistency feat(package.json): change package name to scoped version and update dependencies to reflect new package structure chore(package.json:** Add publishConfig to ensure package is published as public ([01150de](https://github.com/le-pepe/nuxt-snow-effect/commit/01150de))
+
+### ❤️ Contributors
+
+- LePepe ([@le-pepe](http://github.com/le-pepe))
+
 ## v1.1.3
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.1.2...v1.1.3)
