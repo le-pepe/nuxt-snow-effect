@@ -32,7 +32,7 @@ A simple Nuxt module to add snow effect to your Nuxt application using [snow-eff
 Install the module to your Nuxt application with one command:
 
 ```bash
-npx nuxi module add nuxt-snow-effect
+npx nuxi module add @le-pepe/nuxt-snow-effect
 ```
 
 Add the module to your `nuxt.config.ts`:
@@ -40,7 +40,7 @@ Add the module to your `nuxt.config.ts`:
 ```ts
 export default defineNuxtConfig({
   modules: [
-    'nuxt-snow-effect',
+    '@le-pepe/nuxt-snow-effect',
   ],
 })
 ```
@@ -95,14 +95,14 @@ Then in your `app.vue` file, add `<SnowEffectComponent>`:
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-snow-effect/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/nuxt-snow-effect
+[npm-version-src]: https://img.shields.io/npm/v/@le-pepe/nuxt-snow-effect/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/@le-pepe/nuxt-snow-effect
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-snow-effect.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npmjs.com/package/nuxt-snow-effect
+[npm-downloads-src]: https://img.shields.io/npm/dm/@le-pepe/nuxt-snow-effect.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://npmjs.com/package/@le-pepe/nuxt-snow-effect
 
-[license-src]: https://img.shields.io/npm/l/nuxt-snow-effect.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/nuxt-snow-effect
+[license-src]: https://img.shields.io/npm/l/@le-pepe/nuxt-snow-effect.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://npmjs.com/package/@le-pepe/nuxt-snow-effect
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@le-pepe/snow-effect':
+        specifier: ^0.1.13
+        version: 0.1.13
       '@nuxt/kit':
         specifier: ^3.13.2
         version: 3.13.2(magicast@0.3.5)(rollup@4.22.5)
-      snow-effect:
-        specifier: ^0.1.3
-        version: 0.1.3
     devDependencies:
       '@nuxt/devtools':
         specifier: ^1.5.0
@@ -858,6 +858,9 @@ packages:
 
   '@kwsites/promise-deferred@1.1.1':
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
+
+  '@le-pepe/snow-effect@0.1.13':
+    resolution: {integrity: sha512-q+75sEJCXUCX1ZABcLi/s3M1IVsrtqd23PNSXyzounj6bx5QTFDjo3SVILvnbomIocpe2/TqJ7A4hmXWIu5CwA==}
 
   '@mapbox/node-pre-gyp@1.0.11':
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
@@ -3575,9 +3578,6 @@ packages:
   smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
 
-  snow-effect@0.1.3:
-    resolution: {integrity: sha512-jVDRjfph44uTUdTvK942F4BRAG7R86Gp6joZ7bnulNaZy8XDHbOvLYlPKBfyiegB9lpoGy77DR8rnfHYL8D0Ig==}
-
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -4820,6 +4820,8 @@ snapshots:
       - supports-color
 
   '@kwsites/promise-deferred@1.1.1': {}
+
+  '@le-pepe/snow-effect@0.1.13': {}
 
   '@mapbox/node-pre-gyp@1.0.11':
     dependencies:
@@ -8135,8 +8137,6 @@ snapshots:
   slashes@3.0.12: {}
 
   smob@1.5.0: {}
-
-  snow-effect@0.1.3: {}
 
   source-map-js@1.2.1: {}
 
