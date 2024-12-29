@@ -1,4 +1,4 @@
-import { defineCustomElements } from 'snow-effect/loader'
+import { defineCustomElements } from '@le-pepe/snow-effect/loader'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((_nuxtApp) => {
