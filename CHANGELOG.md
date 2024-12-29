@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.2
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.1...v1.2.2)
+
+### 🩹 Fixes
+
+- **plugin.client.ts:** Update import path for defineCustomElements to use the correct package name '@le-pepe/snow-effect/loader' for better compatibility ([2f79391](https://github.com/le-pepe/nuxt-snow-effect/commit/2f79391))
+
+### ❤️ Contributors
+
+- LePepe <josepindy@gmail.com>
+
 ## v1.2.1
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.0...v1.2.1)
