@@ -22,11 +22,18 @@ export default defineNuxtModule<ModuleOptions>({
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    // Optimizar la dependencia de snow-effect
-    _nuxt.options.vite = _nuxt.options.vite || {}
+    // Transpilar el módulo de snow-effect
+    _nuxt.options.build.transpile = _nuxt.options.build.transpile || []
+    _nuxt.options.build.transpile.push('@le-pepe/snow-effect')
+
+    // Configurar Vite para manejar correctamente el módulo
     _nuxt.options.vite.optimizeDeps = _nuxt.options.vite.optimizeDeps || {}
     _nuxt.options.vite.optimizeDeps.include = _nuxt.options.vite.optimizeDeps.include || []
-    _nuxt.options.vite.optimizeDeps.include.push('@le-pepe/snow-effect')
+    _nuxt.options.vite.optimizeDeps.include.push('@le-pepe/snow-effect/loader')
+
+    _nuxt.options.vite.ssr = _nuxt.options.vite.ssr || {}
+    _nuxt.options.vite.ssr.noExternal = _nuxt.options.vite.ssr.noExternal || []
+    _nuxt.options.vite.ssr.noExternal.push('@le-pepe/snow-effect')
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin.client'))
