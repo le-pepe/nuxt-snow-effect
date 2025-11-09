@@ -29,7 +29,10 @@ export default defineNuxtModule<ModuleOptions>({
     // Configurar Vue para reconocer el custom element de Stencil
     _nuxt.options.vue = _nuxt.options.vue || {}
     _nuxt.options.vue.compilerOptions = _nuxt.options.vue.compilerOptions || {}
-    _nuxt.options.vue.compilerOptions.isCustomElement = _nuxt.options.vue.compilerOptions.isCustomElement || ((tag) => false)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    _nuxt.options.vue.compilerOptions.isCustomElement = _nuxt.options.vue.compilerOptions.isCustomElement || ((tag) => {
+      return false
+    })
 
     const originalIsCustomElement = _nuxt.options.vue.compilerOptions.isCustomElement
     _nuxt.options.vue.compilerOptions.isCustomElement = (tag) => {
@@ -43,6 +46,15 @@ export default defineNuxtModule<ModuleOptions>({
     _nuxt.options.vite.optimizeDeps = _nuxt.options.vite.optimizeDeps || {}
     _nuxt.options.vite.optimizeDeps.include = _nuxt.options.vite.optimizeDeps.include || []
     _nuxt.options.vite.optimizeDeps.include.push('@le-pepe/snow-effect/loader')
+    _nuxt.options.vite.optimizeDeps.exclude = _nuxt.options.vite.optimizeDeps.exclude || []
+    _nuxt.options.vite.optimizeDeps.exclude.push('@le-pepe/snow-effect')
+
+    // Configurar Vite SSR
+    _nuxt.options.vite.ssr = _nuxt.options.vite.ssr || {}
+    _nuxt.options.vite.ssr.noExternal = _nuxt.options.vite.ssr.noExternal || []
+    if (Array.isArray(_nuxt.options.vite.ssr.noExternal)) {
+      _nuxt.options.vite.ssr.noExternal.push('@le-pepe/snow-effect')
+    }
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin.client'))

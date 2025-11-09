@@ -1,12 +1,12 @@
+import { defineCustomElements } from '@le-pepe/snow-effect/loader'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin({
   name: 'snow-effect',
   parallel: true,
-  async setup() {
+  setup() {
     if (import.meta.client) {
       try {
-        const { defineCustomElements } = await import('@le-pepe/snow-effect/loader')
         defineCustomElements(window)
       }
       catch (error) {
