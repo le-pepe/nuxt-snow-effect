@@ -21,7 +21,12 @@ export default defineNuxtModule<ModuleOptions>({
   },
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
-    // TODO: make nuxt config working
+
+    // Optimizar la dependencia de snow-effect
+    _nuxt.options.vite = _nuxt.options.vite || {}
+    _nuxt.options.vite.optimizeDeps = _nuxt.options.vite.optimizeDeps || {}
+    _nuxt.options.vite.optimizeDeps.include = _nuxt.options.vite.optimizeDeps.include || []
+    _nuxt.options.vite.optimizeDeps.include.push('@le-pepe/snow-effect')
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin.client'))
