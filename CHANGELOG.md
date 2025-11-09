@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.6...v1.3.0)
+
+### 🚀 Enhancements
+
+- **module.ts:** Transpile and configure snow-effect module for Vite compatibility to ensure proper module handling and optimization ([42f72ba](https://github.com/le-pepe/nuxt-snow-effect/commit/42f72ba))
+
+### ❤️ Contributors
+
+- LePepe <gonzalezmunozjosearmando@gmail.com>
+
 ## v1.2.6
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.5...v1.2.6)
