@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.4.0...v1.5.0)
+
+### 🚀 Enhancements
+
+- **module.ts): enhance Vue configuration to recognize custom elements and optimize Vite dependencies for '@le-pepe/snow-effect' refactor(plugin.client.ts:** Simplify import of defineCustomElements for better performance and readability ([01f639a](https://github.com/le-pepe/nuxt-snow-effect/commit/01f639a))
+
+### ❤️ Contributors
+
+- LePepe <gonzalezmunozjosearmando@gmail.com>
+
 ## v1.4.0
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.3.0...v1.4.0)
