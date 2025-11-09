@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.6
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.5...v1.2.6)
+
+### 🏡 Chore
+
+- **package.json): update dependencies and devDependencies to latest versions for improved stability and features fix(plugin.client.ts): change process.client to import.meta.client for compatibility with the latest Nuxt version fix(tsconfig.json:** Update tsconfig path to reflect new directory structure for correct TypeScript configuration ([cb29a32](https://github.com/le-pepe/nuxt-snow-effect/commit/cb29a32))
+
+### ❤️ Contributors
+
+- LePepe <gonzalezmunozjosearmando@gmail.com>
+
 ## v1.2.5
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.2...v1.2.5)
