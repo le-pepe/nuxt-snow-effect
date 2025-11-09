@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.3.0...v1.4.0)
+
+### 🚀 Enhancements
+
+- **module.ts): add support for custom elements in Vue for snow-effect component fix(plugin.client.ts:** Improve error handling when loading snow-effect custom elements in the Nuxt plugin ([335c769](https://github.com/le-pepe/nuxt-snow-effect/commit/335c769))
+
+### ❤️ Contributors
+
+- LePepe <gonzalezmunozjosearmando@gmail.com>
+
 ## v1.3.0
 
 [compare changes](https://github.com/le-pepe/nuxt-snow-effect/compare/v1.2.6...v1.3.0)
