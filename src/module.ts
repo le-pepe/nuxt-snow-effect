@@ -26,17 +26,28 @@ export default defineNuxtModule<ModuleOptions>({
     _nuxt.options.build.transpile = _nuxt.options.build.transpile || []
     _nuxt.options.build.transpile.push('@le-pepe/snow-effect')
 
+    // Configurar Vue para reconocer el custom element de Stencil
+    _nuxt.options.vue = _nuxt.options.vue || {}
+    _nuxt.options.vue.compilerOptions = _nuxt.options.vue.compilerOptions || {}
+    _nuxt.options.vue.compilerOptions.isCustomElement = _nuxt.options.vue.compilerOptions.isCustomElement || ((tag) => false)
+
+    const originalIsCustomElement = _nuxt.options.vue.compilerOptions.isCustomElement
+    _nuxt.options.vue.compilerOptions.isCustomElement = (tag) => {
+      if (tag === 'snow-effect') {
+        return true
+      }
+      return typeof originalIsCustomElement === 'function' ? originalIsCustomElement(tag) : false
+    }
+
     // Configurar Vite para manejar correctamente el módulo
     _nuxt.options.vite.optimizeDeps = _nuxt.options.vite.optimizeDeps || {}
     _nuxt.options.vite.optimizeDeps.include = _nuxt.options.vite.optimizeDeps.include || []
     _nuxt.options.vite.optimizeDeps.include.push('@le-pepe/snow-effect/loader')
 
-    _nuxt.options.vite.ssr = _nuxt.options.vite.ssr || {}
-    _nuxt.options.vite.ssr.noExternal = _nuxt.options.vite.ssr.noExternal || []
-    _nuxt.options.vite.ssr.noExternal.push('@le-pepe/snow-effect')
-
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin.client'))
+
+    // Registrar el componente wrapper
     addComponent({
       name: 'SnowEffectComponent',
       filePath: resolver.resolve('./runtime/components/SnowEffectComponent.vue'),
